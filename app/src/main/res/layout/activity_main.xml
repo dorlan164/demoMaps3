@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Mapa: ocupa ≈2/5 de la pantalla -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+    <!-- Lista de clientes: ocupa ≈3/5 -->
+    <ListView
+        android:id="@+id/listViewClientes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:choiceMode="singleChoice"
+        android:listSelector="@drawable/selector_fila"/>
+
+</LinearLayout>
